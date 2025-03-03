@@ -26,8 +26,7 @@ class _contadorState extends State<contador> {
         ),
       ),
       floatingActionButton: Row(
-        mainAxisAlignment:
-            MainAxisAlignment.end, // Alinea los botones a la derecha
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
             onPressed: () {
