@@ -46,6 +46,15 @@ class _contadorState extends State<contador> {
             },
             child: Icon(Icons.exposure_minus_1),
           ),
+          const SizedBox(width: 10),
+          FloatingActionButton(
+            onPressed: () {
+              setState(() {
+                clickcontador = 0;
+              });
+            },
+            child: const Icon(Icons.refresh),
+          ),
         ],
       ),
     );
