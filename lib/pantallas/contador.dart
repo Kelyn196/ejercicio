@@ -25,13 +25,36 @@ class _contadorState extends State<contador> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          clickcontador++;
-          setState(() {});
-        },
-        child: Icon(Icons.plus_one),
+      floatingActionButton: Row(
+        mainAxisAlignment:
+            MainAxisAlignment.end, // Alinea los botones a la derecha
+        children: [
+          FloatingActionButton(
+            onPressed: () {
+              setState(() {
+                clickcontador++;
+              });
+            },
+            child: Icon(Icons.plus_one),
+          ),
+          SizedBox(width: 10),
+          FloatingActionButton(
+            onPressed: () {
+              setState(() {
+                clickcontador--;
+              });
+            },
+            child: Icon(Icons.exposure_minus_1),
+          ),
+        ],
       ),
+      //floatingActionButton: FloatingActionButton(
+      //onPressed: () {
+      //clickcontador++;
+      //setState(() {});
+      //},
+      //child: Icon(Icons.plus_one),
+      //),
     );
   }
 }
