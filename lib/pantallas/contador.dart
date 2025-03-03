@@ -48,13 +48,6 @@ class _contadorState extends State<contador> {
           ),
         ],
       ),
-      //floatingActionButton: FloatingActionButton(
-      //onPressed: () {
-      //clickcontador++;
-      //setState(() {});
-      //},
-      //child: Icon(Icons.plus_one),
-      //),
     );
   }
 }
